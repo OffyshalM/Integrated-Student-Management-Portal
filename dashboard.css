@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+header .name-container {
+    color: rgb(12, 6, 99);
+    margin-top: -1rem;
+}
+
+header .search-btn {
+    position: relative;
+}
+
+header .search-btn input {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: .7rem 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header .search-btn input::placeholder {
+    color: black;
+    opacity: 0.4;
+    font-family: "poppins";
+    font-size: 12px;
+    text-align: start;
+}
+
+header .search-btn i.fa-magnifying-glass {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    transform: translateY(-50%);
+    color: rgb(12, 6, 99);
+    cursor: pointer;
+}
+
+.studentProfile {
+    display: flex;
+
+}
+
+.studentProfile .userPic img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.studentProfile .studentName {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: rgb(12, 6, 99);
+    font-weight: 500;
+}
+
+.studentName p {
+    color: black;
+    font-weight: 400;
+    font-size: .7rem;
+    margin-top: -.2rem;
+    opacity: 0.65;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+}
+
+.notification .fas {
+    font-size: 20px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+section {
+    display: block;
+}
+
+.content {
+    display: flex;
+}
+
+section .content .sidebar {
+    width: 200px;
+    height: 105vh;
+    background-color: rgb(12, 6, 99);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: -1rem;
+}
+
+section .content .sidebarPic img {
+    height: 20%;
+    width: 100%;
+    border-radius: 50%;
+    margin-left: 0%;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+
+section .content .sidebar .sidebarLinks li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+section .content .sidebar .sidebarLinks li a:hover {
+    opacity: 1;
+}
+
+section .content .sidebar .sidebarLinks li i {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 7px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+section .content .sidebar .sidebarLinks li {
+    list-style-type: none;
+    margin: 30px 0;
+}
+
+.content .welcomeContainer {
+    display: flex;
+    margin-left: 15px;
+    height: 30vh;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(12, 6, 99);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+
+.welcomeContainer .animatedPic {
+    margin-left: 8rem;
+}
+
+section .schoolDetails {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    display: flex;
+}
+
+.schoolDetails .courseOverview {
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    margin-top: -.5rem;
+    border-radius: 20px;
+    height: 100%;
+ margin-left: -70px;
+}
+
+.courseOverview h2 {
+    font-size: 25px;
+    margin-bottom: -10px;
+    margin-top: -.5rem;
+    text-align: center;
+    color: rgb(12, 6, 99);
+}
+
+.course-card {
+    background-color: rgb(202, 197, 197);
+    padding-left: 1rem;
+    padding-bottom: 1px;
+    margin-top: .7rem;
+    padding-top: 0.1px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.courseOverview .course-card h3 {
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: rgb(12, 6, 99);
+}
+
+.courseOverview .course-card p {
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: rgb(12, 6, 99);
+}
+
+.courseOverview .course-card .instructor {
+    margin-top: 0rem;
+    color: rgb(12, 6, 99);
+}
+
+.courseOverview button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(12, 6, 99);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "poppins";
+    margin-top: 1rem;
+
+}
+
+.courseOverview button:hover {
+    background-color: rgb(12, 6, 99);
+    opacity: 0.9;
+}
+
+.cgpaContainer {
+    margin-left: 30px;
+    margin-top: -.5rem;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    border-radius: 20px;
+    height: 70vh;
+}
+
+.cgpaContainer .cgpa-card h2 {
+    font-size: 25px;
+    color: rgb(12, 6, 99);
+    text-align: center;
+}
+
+.cgpa-card .cgpa-value {
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.cgpa-card .cgpa-details {
+    color: rgb(12, 6, 99);
+    text-align: center;
+    margin-top: -.4rem;
+}
+
+.calendar {
+    height: 70vh;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    margin-top: -.5rem;
+    margin-left: 30px;
+
+}
+
+.calendar-header {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(12, 6, 99);
+}
+
+.days-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: rgb(12, 6, 99);
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.days {
+    padding: 2px 0;
+    font-weight: bold;
+}
+
+.day-cell-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 4px;
+}
+
+.day-cell {
+    padding: 5px;
+    background-color: #ecf0f1;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.day-cell:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.nav-buttons button {
+    background-color: rgb(12, 6, 99);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out;
+    font-family: "poppins";
+
+}
+
+.nav-buttons button:hover {
+    background-color: #2980b9;
+}
+
+.event-container {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.event-container p {
+    font-size: 16px;
+    color: #000;
+}
+
+.eventBtn {
+    background-color: rgb(12, 6, 99);
+    color: white;
+    border: none;
+    font-size: 13px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -.5rem;
+    transition: 0.2s ease-in-out;
+    font-family: "poppins";
+
+}
+
+.eventBtn:hover {
+    background-color: #3498db;
+}
+
+@media screen and (max-width: 600px) {
+    .calendar {
+        padding: 10px;
+    }
+
+    .day-cell {
+        padding: 5px;
+    }
+
+    .days-header {
+        font-size: 14px;
+    }
+
+    .event-container p {
+        font-size: 14px;
+    }
+}

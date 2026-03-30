@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "poppins";
+    margin: auto;
+    padding: 0px;
+}
+
+.welcome-text{
+    font-size: 1.5rem;
+    color: rgb(12, 6, 99);
+}
+.welcome-text h2{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.form-container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+input[type="text"],input[type="email"],input[type="date"],input[type="radio"],input[type="tel"],input[type="password"]{
+    width: 100%;
+    padding: 5px 0px;
+    border-radius: 5px;
+border: 1px solid ;
+outline: none;
+
+}
+input::placeholder{
+    padding: 5px;
+}
+button {
+    width: 100%; 
+    padding: 10px;
+    background-color: rgb(12, 6, 99);
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3; 
+    transition: all 0.5s ease-in-out;
+}
+
+.loginBtn{
+    display: inline-block;
+    margin-bottom:5px;
+    background-color:rgb(12, 6, 99);
+    color: #fff;
+    padding: 8px 12px; /* Reduce padding */
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px; /* Smaller font size */
+    transition: all 0.5s ease-in-out;
+}
+.loginBtn:hover{
+    background-color: #0056b3;
+}

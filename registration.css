@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+header .name-container {
+    color: rgb(12, 6, 99);
+    margin-top: -1rem;
+}
+
+header .search-btn {
+    position: relative;
+}
+
+header .search-btn input {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: .7rem 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header .search-btn input::placeholder {
+    color: black;
+    opacity: 0.4;
+    font-family: "poppins";
+    font-size: 12px;
+    text-align: start;
+}
+
+header .search-btn i.fa-magnifying-glass {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    transform: translateY(-50%);
+    color: rgb(12, 6, 99);
+    cursor: pointer;
+}
+
+.studentProfile {
+    display: flex;
+
+}
+
+.studentProfile .userPic img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.studentProfile .studentName {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: rgb(12, 6, 99);
+    font-weight: 500;
+}
+
+.studentName p {
+    color: black;
+    font-weight: 400;
+    font-size: .7rem;
+    margin-top: -.2rem;
+    opacity: 0.65;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+}
+
+.notification .fas {
+    font-size: 20px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+section {
+    display: block;
+}
+
+.content {
+    display: flex;
+}
+
+section .content .sidebar {
+    width: 200px;
+    height: 105vh;
+    background-color: rgb(12, 6, 99);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: -1rem;
+}
+
+section .content .sidebarPic img {
+    height: 25%;
+    width: 90%;
+    border-radius: 50%;
+    margin-left: 0%;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+
+section .content .sidebar .sidebarLinks li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+section .content .sidebar .sidebarLinks li a:hover {
+    opacity: 1;
+}
+
+section .content .sidebar .sidebarLinks li i {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 7px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+section .content .sidebar .sidebarLinks li {
+    list-style-type: none;
+    margin: 30px 0;
+}
+
+.content .welcomeContainer {
+    display: flex;
+    margin-left: 15px;
+    height: 30vh;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(12, 6, 99);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+
+.welcomeContainer .animatedPic {
+    margin-left: 8rem;
+}
+
+
+/* Starts */
+
+
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(12, 6, 99);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+th {
+    background-color:rgb(12, 6, 99);
+    color: #fff;
+}
+
+.actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color:#3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(12, 6, 99);
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #323232;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.notification p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.notification button {
+    background-color: rgb(12, 6, 99);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
